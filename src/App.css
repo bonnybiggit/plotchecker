@@ -1,0 +1,13 @@
+:root {
+  --background: #f8f7f3;
+  --surface: #ffffff;
+  --text: #182c25;
+  --border: #e1e5df;
+}
+[data-theme="dark"] {
+  --background: #101c19;
+  --surface: #1b2a25;
+  --text: #f5f5ef;
+  --border: #34453d;
+}
+body { background: var(--background); color: var(--text); }

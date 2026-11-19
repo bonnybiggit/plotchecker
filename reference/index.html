@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plotchecker.ng: Verify Your Land Before You Pay</title>
+  <meta name="description" content="Before you spend millions on land in Nigeria, spend a little with us to confirm it is actually yours to buy. Fast coordinate verification via WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__logo">
+        <a href="#" class="nav__logo-link">
+          <img src="secondlogo.png" alt="Plotchecker.ng" class="nav__logo-img" />
+        </a>
+      </div>
+      <ul class="nav__links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav__cta-group">
+        <a href="https://wa.me/+2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20a%20survey%20plan" class="btn btn--nav" target="_blank">WhatsApp</a>
+        <button class="btn btn--nav btn--nav-chat" onclick="openTawkChat()">Live Chat</button>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#how">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://wa.me/+2348142395577" class="btn btn--nav" target="_blank">Verify on WhatsApp</a>
+      <button class="btn btn--nav btn--nav-chat" onclick="openTawkChat()">Chat with our Agent</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero hero--centered">
+    <div class="hero__bg-pattern"></div>
+    <div class="container container--center">
+      <div class="hero__badge">
+        <span class="badge__dot"></span>
+        Nigeria's Fastest Land Verification Service
+      </div>
+      <h1 class="hero__headline">
+        Before You Spend <em>Millions</em> on Land,<br />
+        Spend a Little to Know It's Real.
+      </h1>
+      <p class="hero__sub">
+        Send us your survey plan on WhatsApp OR Livechat. In <strong>6 hours</strong> we tell you 
+        if the land is exactly where the seller claims it is. 
+        No registry queues. No lawyers. No wahala.
+      </p>
+      <div class="hero__actions hero__actions--center">
+        <a href="https://wa.me/+2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20my%20survey%20plan" class="btn btn--primary" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.554 4.103 1.523 5.824L0 24l6.344-1.501A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.366l-.36-.214-3.727.882.917-3.636-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
+          Verify on WhatsApp
+        </a>
+        <button class="btn btn--ghost btn--chat-trigger" onclick="openTawkChat()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          Chat with our Agent
+        </button>
+        <a href="#how" class="btn btn--ghost">See How It Works</a>
+      </div>
+      <div class="hero__trust hero__trust--center">
+        <div class="trust__item">
+          <span class="trust__num">6hrs</span>
+          <span class="trust__label">Average Turnaround</span>
+        </div>
+        <div class="trust__divider"></div>
+        <div class="trust__item">
+          <span class="trust__num">₦15k</span>
+          <span class="trust__label">Starting Price</span>
+        </div>
+        <div class="trust__divider"></div>
+        <div class="trust__item">
+          <span class="trust__num">100%</span>
+          <span class="trust__label">WhatsApp First</span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll__line"></div>
+    </div> -->
+  </section>
+
+  <!-- TRUST / HERO VISUAL SECTION -->
+  <section class="trust-visual-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="badge">
+          <i class="fas fa-shield-alt"></i>
+          <span>Trusted by 1,000+ Nigerian land buyers</span>
+        </div>
+        <h1>Don't Buy Land Blind.<br><span class="highlight">Verify First.</span></h1>
+        <p class="hero-subtitle">
+          We cross-check your survey plan against satellite imagery to confirm the land
+          actually exists where the paperwork says it does. No field visits. No guesswork.
+          Just facts, delivered in 6 - 24 hours.
+        </p>
+        <div class="hero-cta">
+          <a href="https://wa.me/+2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20my%20survey%20plan" class="btn btn-large btn-primary" target="_blank">
+            <i class="fas fa-search-location"></i>
+            Start Verification - ₦15,000
+          </a>
+          <a href="#how" class="btn btn-large btn-outline">
+            <i class="fas fa-play-circle"></i>
+            See How It Works
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Desk-based verification</span>
+          </div>
+          <div class="trust-item">
+            <i class="fas fa-check-circle"></i>
+            <span>24-48 hour turnaround</span>
+          </div>
+          <div class="trust-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Green / Red result</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="map-card">
+          <div class="map-card-header">
+            <span class="status-badge red">RED FLAG</span>
+            <span class="map-date">Verified: May 28, 2026</span>
+          </div>
+          <div class="map-preview">
+            <img src="SURVEYPLAN1.png" alt="Survey Plan Sample">
+            <div class="map-overlay">
+              <div class="plot-boundary"></div>
+              <div class="alert-marker">
+                <i class="fas fa-exclamation-triangle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="map-card-body">
+            <h4>Survey Plan #LSK-2024-08921</h4>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Ibeju-Lekki, Lagos</p>
+            <div class="findings">
+              <div class="finding-item danger">
+                <i class="fas fa-times-circle"></i>
+                <span>Coordinates fall on water body</span>
+              </div>
+              <div class="finding-item danger">
+                <i class="fas fa-times-circle"></i>
+                <span>Area mismatch: Claimed 600sqm, actual ~0sqm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Simple Process</span>
+        <h2>Three Steps. Six Hours. Peace of Mind.</h2>
+        <p>No office visits. No long forms. No waiting weeks. Just WhatsApp / Livechat.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-step="01">
+          <div class="step__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Send Your Survey Plan</h3>
+          <p>WhatsApp or Livechat us a clear photo or scan of your survey plan. That's all we need to begin. No paperwork, no forms, no office visit.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step" data-step="02">
+          <div class="step__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>We Run the Check</h3>
+          <p>Our team extracts the GPS coordinates from your survey plan and plots them precisely on satellite maps. We compare against the location the seller described.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step" data-step="03">
+          <div class="step__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Get Your Clear Report</h3>
+          <p>Within 6 hours you receive a clear report: Green means proceed, Red means danger. With an actual map showing exactly where the coordinates fall.</p>
+        </div>
+      </div>
+      <div class="how__cta">
+        <a href="https://wa.me/+2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20my%20survey%20plan" class="btn btn--primary" target="_blank">Start Verification on WhatsApp →</a>
+        <button class="btn btn--ghost btn--chat-trigger" onclick="openTawkChat()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          Chat with our Agent
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Simple Pricing</span>
+        <h2>Pay a Little. Protect a Lot.</h2>
+        <p>No hidden fees. No subscriptions. Pay once, get your answer.</p>
+      </div>
+      <div class="pricing__cards">
+
+        <div class="pricing__card">
+          <div class="pricing__tier">Basic Check</div>
+          <div class="pricing__price">₦15,000</div>
+          <div class="pricing__desc">For buyers who need a quick answer fast</div>
+          <ul class="pricing__features">
+            <li><span class="check">✓</span> Coordinate extraction from survey plan</li>
+            <li><span class="check">✓</span> GPS location mapping</li>
+            <li><span class="check">✓</span> Claimed vs actual location comparison</li>
+            <li><span class="check">✓</span> Green / Red result report</li>
+            <li><span class="check">✓</span> Map screenshot included</li>
+            <li><span class="muted">✗</span> Historical satellite imagery</li>
+            <li><span class="muted">✗</span> Physical field visit</li>
+          </ul>
+          <div class="pricing__time"><b>⏱ Results in 6 hours</b></div>
+          <div class="pricing__btn-group">
+            <a href="https://wa.me/+2348142395577?text=Hello%2C%20I%20want%20the%20Basic%20Check%20for%20₦15%2C000" class="btn btn--outline" target="_blank">WhatsApp</a>
+            <button class="btn btn--outline btn--chat-trigger" onclick="openTawkChat()">Chat with Agent</button>
+          </div>
+        </div>
+
+        <div class="pricing__card pricing__card--featured">
+          <div class="pricing__badge">Most Popular</div>
+          <div class="pricing__tier">Standard Report</div>
+          <div class="pricing__price">₦35,000</div>
+          <div class="pricing__desc">For serious buyers before committing money</div>
+          <ul class="pricing__features">
+            <li><span class="check">✓</span> Everything in Basic Check</li>
+            <li><span class="check">✓</span> Historical satellite imagery (3 different years)</li>
+            <li><span class="check">✓</span> Flood risk assessment</li>
+            <li><span class="check">✓</span> Detailed written report (5–8 pages)</li>
+            <li><span class="check">✓</span> Recommendations & next steps</li>
+            <li><span class="muted">✗</span> Physical field visit</li>
+          </ul>
+          <div class="pricing__time"><b>⏱ Results in 24 hours</b></div>
+          <div class="pricing__btn-group">
+            <a href="https://wa.me/+2348142395577?text=Hello%2C%20I%20want%20the%20Standard%20Report%20for%20₦35%2C000" class="btn btn--primary" target="_blank">WhatsApp</a>
+            <button class="btn btn--outline btn--chat-trigger" onclick="openTawkChat()">Chat with Agent</button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="pricing__note">
+        🏢 <strong>Corporate & Institutional pricing available</strong> for law firms, banks, and real estate developers.
+        <a href="https://wa.me/+2348142395577?text=Hello%2C%20I%20am%20interested%20in%20corporate%20pricing" target="_blank">WhatsApp us →</a>
+        or <button class="pricing__note-chat" onclick="openTawkChat()">Chat with our Agent →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RED FLAGS GALLERY -->
+  <section class="redflags">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Real Cases</span>
+        <h2>Red Flags We've Caught</h2>
+        <p>These are real patterns we see every week. A survey plan alone won't reveal them.</p>
+      </div>
+      <div class="redflags-grid">
+        <div class="redflag-card">
+          <div class="redflag-image">
+            <img src="waterbody.png" alt="Water body">
+            <div class="redflag-overlay">
+              <span class="redflag-tag">WATER BODY</span>
+            </div>
+          </div>
+          <div class="redflag-body">
+            <h4>Plot on Paper, Lagoon in Reality</h4>
+            <p>Survey plan claimed 600sqm in Ibeju-Lekki. Satellite showed the exact coordinates fell in a tidal lagoon. Buyer saved ₦8M.</p>
+          </div>
+        </div>
+        <div class="redflag-card">
+          <div class="redflag-image">
+            <img src="already built.png" alt="Built structure">
+            <div class="redflag-overlay">
+              <span class="redflag-tag">ALREADY BUILT</span>
+            </div>
+          </div>
+          <div class="redflag-body">
+            <h4>Sold as Empty Land, Already Developed</h4>
+            <p>Plan described virgin land in Epe. Imagery revealed a 3-bedroom house built 4 years prior. Someone else's property entirely.</p>
+          </div>
+        </div>
+        <div class="redflag-card">
+          <div class="redflag-image">
+            <img src="on road.png" alt="Road intersection">
+            <div class="redflag-overlay">
+              <span class="redflag-tag">ON ROAD</span>
+            </div>
+          </div>
+          <div class="redflag-body">
+            <h4>Land That Doesn't Exist</h4>
+            <p>Coordinates from a "registered" survey plan mapped directly onto an existing paved road in Abuja. Pure fiction on paper.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PLOTCHECKER -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why__inner">
+        <div class="why__left">
+          <span class="section-label">Why Plotchecker.ng</span>
+          <h2>We Go Where Others Stop.</h2>
+          <p class="why__intro">Google Maps gets you to the neighbourhood. We get you to the truth about the land itself.</p>
+          <div class="why__points">
+            <div class="why__point">
+              <div class="why__point-icon">⚡</div>
+              <div>
+                <h4>Fastest in Nigeria</h4>
+                <p>6-hour turnaround on coordinate checks. While competitors take days, you get your answer the same day.</p>
+              </div>
+            </div>
+            <div class="why__point">
+              <div class="why__point-icon">📱</div>
+              <div>
+                <h4>WhatsApp First</h4>
+                <p>No app to download. No account to create. Just send a photo on WhatsApp and we handle everything else.</p>
+              </div>
+            </div>
+            <div class="why__point">
+              <div class="why__point-icon">🗺️</div>
+              <div>
+                <h4>Geospatial Precision</h4>
+                <p>We use professional GIS tools to plot exact coordinates, not just Google Maps guesswork. The same technology surveyors use.</p>
+              </div>
+            </div>
+            <div class="why__point">
+              <div class="why__point-icon">💰</div>
+              <div>
+                <h4>Accessible Pricing</h4>
+                <p>Starting at ₦15,000, a tiny fraction of what you stand to lose. Built for everyday Nigerian buyers, not just diaspora.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why__right">
+          <div class="compare-table">
+            <div class="compare-header">
+              <span>What We Check</span>
+              <span class="compare-us">Us</span>
+              <span class="compare-them">DIY</span>
+            </div>
+            <div class="compare-row">
+              <span>Coordinate location match</span>
+              <span class="yes">✓</span>
+              <span class="no">✗</span>
+            </div>
+            <div class="compare-row">
+              <span>Satellite imagery analysis</span>
+              <span class="yes">✓</span>
+              <span class="no">✗</span>
+            </div>
+            <div class="compare-row">
+              <span>Flood risk assessment</span>
+              <span class="yes">✓</span>
+              <span class="no">✗</span>
+            </div>
+            <div class="compare-row">
+              <span>Acquisition zone check</span>
+              <span class="yes">✓</span>
+              <span class="no">✗</span>
+            </div>
+            <div class="compare-row">
+              <span>Done in 6 hours</span>
+              <span class="yes">✓</span>
+              <span class="no">✗</span>
+            </div>
+            <div class="compare-row">
+              <span>No office visits needed</span>
+              <span class="yes">✓</span>
+              <span class="no">✗</span>
+            </div>
+            <div class="compare-row">
+              <span>Available on WhatsApp</span>
+              <span class="yes">✓</span>
+              <span class="no">✗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS / SOCIAL PROOF -->
+  <section class="proof">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Real Stories</span>
+        <h2>Nigerians Who Avoided Losing Everything.</h2>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial__quote">"I was about to transfer ₦8.5 million for a plot in Ibeju-Lekki. Plotchecker showed me the coordinates pointed to a government acquisition zone 12km away. They saved my entire savings."</div>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">AO</div>
+            <div>
+              <strong>Adebayo O.</strong>
+              <span>Lagos Mainland Buyer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__quote">"I'm based in the UK. My cousin was handling the land purchase. Plotchecker verified everything remotely. The survey plan coordinates matched perfectly so I bought with complete confidence."</div>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">CN</div>
+            <div>
+              <strong>Chioma N.</strong>
+              <span>Diaspora Buyer, UK</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__quote">"As a real estate agent, I now pre-verify every listing I take on. My clients trust me more. Deals close faster. Plotchecker is now part of my standard process."</div>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">EM</div>
+            <div>
+              <strong>Emeka M.</strong>
+              <span>Real Estate Agent, Lagos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IS THIS FOR -->
+  <section class="who">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-label section-label--light">Who This Is For</span>
+        <h2>If You Are Buying Land in Nigeria  This Is For You.</h2>
+      </div>
+      <div class="who__grid">
+        <div class="who__card">
+          <div class="who__icon">🏠</div>
+          <h4>Individual Buyers</h4>
+          <p>Buying your first plot or family land. Protect your life savings before you transfer a kobo.</p>
+        </div>
+        <div class="who__card">
+          <div class="who__icon">✈️</div>
+          <h4>Diaspora Nigerians</h4>
+          <p>Buying from abroad and cannot visit? We are your eyes on the ground. Remote verification available.</p>
+        </div>
+        <div class="who__card">
+          <div class="who__icon">🤝</div>
+          <h4>Real Estate Agents</h4>
+          <p>Pre-verify your listings and close deals faster. A "Plotchecker Verified" tag builds client trust instantly.</p>
+        </div>
+        <div class="who__card">
+          <div class="who__icon">⚖️</div>
+          <h4>Property Lawyers</h4>
+          <p>Outsource field verification to us. We handle the ground work so you can focus on the legal work.</p>
+        </div>
+        <div class="who__card">
+          <div class="who__icon">🏗️</div>
+          <h4>Developers</h4>
+          <p>Before committing hundreds of millions, know exactly what you are buying and what risks exist.</p>
+        </div>
+        <div class="who__card">
+          <div class="who__icon">🏦</div>
+          <h4>Banks & Fintechs</h4>
+          <p>Property-backed loans need verified collateral. We provide fast, reliable verification for your portfolio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2>Everything You Need to Know.</h2>
+      </div>
+      <div class="faq__list">
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            What exactly do you check?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>We extract the GPS coordinates from your survey plan and use professional GIS software to plot them on a precise satellite map. We then compare that actual location against the address the seller claims the land is at. This catches the most common fraud in Nigerian real estate where a legitimate survey plan is presented for a completely different piece of land.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            My survey plan has no coordinates. Can you still help?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>A survey plan without valid coordinates is itself a serious red flag. Many family land and community land transactions involve survey plans drawn by unlicensed surveyors with no proper coordinates. If your plan has no coordinates, we will flag this clearly in our report and recommend you engage a licensed surveyor before proceeding.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Does this replace a lawyer or licensed surveyor?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>No. We are a fast, affordable first-line intelligence service. We tell you whether the coordinates match the claimed location, something most lawyers do not check and most buyers never do. For final legal title confirmation, you should still engage a property lawyer. Think of us as the check you do before investing time and money in full legal due diligence.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            How do I pay?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Payment is via bank transfer before we begin the verification. We will send you our account details when you contact us on WhatsApp or our Livechat. We accept payment from local Nigerian accounts and international transfers for diaspora clients.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Is my survey plan information safe with you?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Yes. Your documents are used solely for the purpose of your verification. We do not share your survey plan, location data, or personal information with any third party. All data is handled securely and confidentially.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Do you cover cities outside Lagos?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Yes. Coordinate verification works for any land in Nigeria because GPS coordinates are universal. We currently serve all states in Nigeria. Contact us on WhatsApp with your location and we will confirm coverage immediately.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-final">
+    <div class="container">
+      <div class="cta-final__inner">
+        <div class="cta-final__bg-text">VERIFY</div>
+        <span class="section-label section-label--light">Ready to Protect Your Investment?</span>
+        <h2>Don't Pay for Land<br />Until You Know It's Real.</h2>
+        <p>Send us your survey plan right now. In 6 hours you will know exactly where that land really is before you lose a single naira to fraud.</p>
+        <div class="cta-final__btns">
+          <a href="https://wa.me/+2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20my%20survey%20plan" class="btn btn--primary btn--large" target="_blank">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.554 4.103 1.523 5.824L0 24l6.344-1.501A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.366l-.36-.214-3.727.882.917-3.636-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
+            Start Verification on WhatsApp
+          </a>
+          <button class="btn btn--large btn--cta-chat" onclick="openTawkChat()">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            Chat with our Agent Here
+          </button>
+        </div>
+        <p class="cta-final__small">Average response time: under 2 minutes · Available 7 days a week</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo-link">
+            <img src="secondlogo.png" alt="Plotchecker.ng" class="footer__logo" />
+          </a>
+          <p>Nigeria's fastest and most accessible land coordinate verification service. Protecting Nigerian land buyers one survey plan at a time.</p>
+        </div>
+        <div class="footer__links">
+          <h5>Services</h5>
+          <a href="#pricing">Basic Check</a>
+          <a href="#pricing">Standard Report</a>
+          <a href="https://wa.me/+2348142395577" target="_blank">Corporate Pricing</a>
+        </div>
+        <div class="footer__links">
+          <h5>Company</h5>
+          <a href="#how">How It Works</a>
+          <a href="#why">Why Us</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://wa.me/+2348142395577" target="_blank">Contact Us</a>
+        </div>
+        <div class="footer__contact">
+          <h5>Contact</h5>
+          <a href="https://wa.me/+2348142395577" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.554 4.103 1.523 5.824L0 24l6.344-1.501A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.366l-.36-.214-3.727.882.917-3.636-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
+            WhatsApp Us
+          </a>
+          <button class="footer__chat-btn" onclick="openTawkChat()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            Chat with our Agent
+          </button>
+          <p class="footer__tagline">Plotchecker.ng: Verify Before You Buy.</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Plotchecker.ng. All rights reserved.</p>
+        <p>This service provides geospatial intelligence. It does not constitute legal advice. Always engage a licensed property lawyer for final title confirmation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT BUTTON -->
+  <a href="https://wa.me/+2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20my%20survey%20plan"
+     class="whatsapp-float"
+     id="whatsappFloat"
+     target="_blank"
+     aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.554 4.103 1.523 5.824L0 24l6.344-1.501A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.366l-.36-.214-3.727.882.917-3.636-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
+    <span class="whatsapp-float__label">WhatsApp</span>
+    <span class="whatsapp-float__pulse"></span>
+  </a>
+
+  <!--
+  ═══════════════════════════════════════════════════
+  TAWK.TO LIVE CHAT — SETUP INSTRUCTIONS
+  ═══════════════════════════════════════════════════
+
+  STEP 1 — Create your free account:
+    Go to https://www.tawk.to and sign up free.
+    No credit card needed. Takes 2 minutes.
+
+  STEP 2 — Create a Property:
+    After signup, create a new "Property" and name
+    it "Plotchecker.ng"
+
+  STEP 3 — Get your embed code:
+    Dashboard → Administration → Chat Widget
+    Copy your unique Property ID and Widget ID.
+    They look like: abc123def / 1a2b3c4d5
+
+  STEP 4 — Replace the placeholder values below:
+    Change YOUR_PROPERTY_ID to your Property ID
+    Change YOUR_WIDGET_ID  to your Widget ID
+
+  STEP 5 — Customise in Tawk.to Dashboard:
+    - Upload your Plotchecker.ng logo
+    - Set brand color to #1B2A4A (your navy)
+    - Set your welcome message:
+      "👋 Hello! Welcome to Plotchecker.ng.
+       Send us your survey plan and we will verify
+       if the land is where the seller claims —
+       in 6 hours. How can we help you?"
+    - Add your team members under
+      Administration → Agents
+    - Download the Tawk.to mobile app so your
+      team gets notified instantly on their phones
+
+  STEP 6 — Set offline hours:
+    Administration → Business Hours
+    Set your working hours so visitors know when
+    to expect a reply vs leaving a message.
+
+  STEP 7 — Done. The chat widget will appear
+    automatically on your website branded in
+    your colours with your team ready to respond.
+  ═══════════════════════════════════════════════════
+  -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {};
+    var Tawk_LoadStart = new Date();
+
+    // ── TAWK.TO CONFIGURATION ──────────────────
+    // Customise the widget appearance and behaviour
+    Tawk_API.onLoad = function () {
+
+      // Set visitor information if available
+      // (useful when visitor fills a form on your site)
+      // Tawk_API.setAttributes({ name: 'Visitor Name', email: 'visitor@email.com' }, function(error) {});
+
+      // Customise widget colours to match Plotchecker.ng brand
+      // Note: Full colour customisation is done in the Tawk.to dashboard
+      // Administration → Chat Widget → Appearance
+
+    };
+
+    // Show a proactive message after 30 seconds on page
+    Tawk_API.onStatusChange = function (status) {
+      if (status === 'online') {
+        setTimeout(function () {
+          if (typeof Tawk_API.popup === 'function') {
+            // Optional: auto-open chat after delay
+            // Tawk_API.popup();
+          }
+        }, 30000);
+      }
+    };
+
+    (function () {
+      var s1 = document.createElement("script");
+      var s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+
+
+      s1.src = "https://embed.tawk.to/69f626940e006d1c3cb11508/1jnkoddfg";
+
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--  END TAWK.TO  -->
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
