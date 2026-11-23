@@ -28,7 +28,6 @@
 .how > .container { max-width: 1180px; margin-inline: auto; }
 .how .section-header { max-width: 650px; margin: 0 auto 24px; text-align: center; }
 .how .section-label { display: inline-flex; align-items: center; gap: 8px; color: var(--how-gold); font-size: 11px; line-height: 1.5; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.how .section-label::before { content: ''; width: 18px; height: 1px; background: currentColor; }
 .how h2 { margin: 10px 0 12px; font: 400 clamp(29px, 4vw, 42px)/1.15 'Fraunces', Georgia, serif; letter-spacing: -.035em; text-wrap: balance; }
 .how p { margin: 0; color: var(--how-muted); font-size: 14px; line-height: 1.7; }
 .how .steps { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }

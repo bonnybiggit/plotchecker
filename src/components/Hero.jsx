@@ -22,7 +22,7 @@ export default function Hero() {
         No registry queues. No lawyers. No wahala.
       </p>
       <div className="hero__actions hero__actions--center">
-        <a href="https://wa.me/+2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20my%20survey%20plan" className="btn btn--primary" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20my%20survey%20plan" className="btn btn--primary" target="_blank" rel="noopener noreferrer">
           <WhatsAppIcon />
           Verify on WhatsApp
         </a>

@@ -7,12 +7,12 @@ import MobileBottomNav from "./components/MobileBottomNav";
 function App() {
   return (
     <div className="app">
-      <Navbar whatsappUrl="https://wa.me/2347062295349" />
+      <Navbar whatsappUrl="https://wa.me/2348142395577" />
       <main>
         <Hero />
         <HowItWorks />
       </main>
-      <MobileBottomNav whatsappUrl="https://wa.me/2347062295349" />
+      <MobileBottomNav whatsappUrl="https://wa.me/2348142395577" />
     </div>
   );
 }

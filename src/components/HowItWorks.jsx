@@ -39,7 +39,7 @@ export default function HowItWorks() {
         </div>
       </div>
       <div className="how__cta">
-        <a href="https://wa.me/+2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20my%20survey%20plan" className="btn btn--primary" target="_blank" rel="noopener noreferrer">Start Verification on WhatsApp →</a>
+        <a href="https://wa.me/2348142395577?text=Hello%20Plotchecker%2C%20I%20want%20to%20verify%20my%20survey%20plan" className="btn btn--primary" target="_blank" rel="noopener noreferrer">Start Verification on WhatsApp →</a>
         <button className="btn btn--ghost btn--chat-trigger" type="button" onClick={openHeroChat}>
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
           Chat with our Agent
