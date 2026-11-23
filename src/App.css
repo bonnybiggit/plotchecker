@@ -1,13 +1,34 @@
 :root {
-  --background: #f8f7f3;
+  --content-width: 1100px;
+  --page-gutter: clamp(20px, 3vw, 24px);
+  --section-space: clamp(32px, 4vw, 48px);
+  --emerald-accent: #047857;
+  --emerald-deep: #065f46;
+  --emerald-on-accent: #ffffff;
+  --emerald-badge-start: #047857;
+  --emerald-badge-end: #065f46;
+  --emerald-shadow: #065f4633;
+  --background: #fafaf7;
   --surface: #ffffff;
-  --text: #182c25;
-  --border: #e1e5df;
+  --surface-subtle: #f1f4f0;
+  --text: #202824;
+  --text-muted: #56615b;
+  --border: #dde3df;
+  --accent-tint: #e9f4ed;
 }
 [data-theme="dark"] {
-  --background: #101c19;
-  --surface: #1b2a25;
-  --text: #f5f5ef;
-  --border: #34453d;
+  --emerald-accent: #6ee7b7;
+  --emerald-deep: #34d399;
+  --emerald-on-accent: #062e24;
+  --emerald-badge-start: #047857;
+  --emerald-badge-end: #065f46;
+  --emerald-shadow: #00000033;
+  --background: #181b19;
+  --surface: #242925;
+  --surface-subtle: #2b322d;
+  --text: #f3f5f3;
+  --text-muted: #bac4bc;
+  --border: #414a43;
+  --accent-tint: #233c30;
 }
 body { background: var(--background); color: var(--text); }

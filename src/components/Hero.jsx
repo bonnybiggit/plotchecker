@@ -1,4 +1,4 @@
-﻿import { openHeroChat } from '../lib/heroChat';
+import { openWhatsApp } from '../lib/whatsapp';
 import './Hero.css';
 import CountUp from './CountUp';
 import WhatsAppIcon from './WhatsAppIcon';
@@ -17,7 +17,7 @@ export default function Hero() {
         Spend a Little to Know It's Real.
       </h1>
       <p className="hero__sub">
-        Send us your survey plan on WhatsApp OR Livechat. In <strong>6 hours</strong> we tell you 
+        Send us your survey plan on WhatsApp. In <strong>6 hours</strong> we tell you
         if the land is exactly where the seller claims it is. 
         No registry queues. No lawyers. No wahala.
       </p>
@@ -26,9 +26,9 @@ export default function Hero() {
           <WhatsAppIcon />
           Verify on WhatsApp
         </a>
-        <button className="btn btn--ghost btn--chat-trigger" type="button" onClick={openHeroChat}>
+        <button className="btn btn--ghost btn--chat-trigger" type="button" onClick={openWhatsApp}>
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-          Chat with our Agent
+          Chat on WhatsApp
         </button>
         <a href="#how" className="btn btn--ghost">See How It Works</a>
       </div>

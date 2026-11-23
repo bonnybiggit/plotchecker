@@ -7,11 +7,11 @@
   }
 
   .mobile-bottom-nav {
-    --bottom-nav-bg: #fffefa;
-    --bottom-nav-ink: #58645b;
-    --bottom-nav-accent: #234b39;
-    --bottom-nav-hover: #f1f2e9;
-    --bottom-nav-line: #e1e5df;
+    --bottom-nav-bg: var(--background);
+    --bottom-nav-ink: var(--text);
+    --bottom-nav-accent: var(--emerald-accent);
+    --bottom-nav-hover: var(--surface-subtle);
+    --bottom-nav-line: var(--border);
     position: fixed;
     z-index: 30;
     left: max(12px, env(safe-area-inset-left, 0px));
@@ -30,11 +30,11 @@
   }
 
   [data-theme="dark"] .mobile-bottom-nav {
-    --bottom-nav-bg: #192b23;
-    --bottom-nav-ink: #bec8bf;
-    --bottom-nav-accent: #c8b382;
-    --bottom-nav-hover: #24372c;
-    --bottom-nav-line: #34443a;
+    --bottom-nav-bg: var(--background);
+    --bottom-nav-ink: var(--text);
+    --bottom-nav-accent: var(--emerald-accent);
+    --bottom-nav-hover: var(--surface-subtle);
+    --bottom-nav-line: var(--border);
     box-shadow: 0 6px 28px #00000030;
   }
 

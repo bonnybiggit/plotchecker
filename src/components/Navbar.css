@@ -1,27 +1,28 @@
-﻿.pc-navbar {
-  --nav-bg: #fffefa;
-  --nav-ink: #233f33;
-  --nav-muted: #58645b;
-  --nav-line: #e7e7dd;
-  --nav-hover: #f1f2e9;
-  --nav-accent: #234b39;
-  --nav-accent-ink: #fffefa;
-  position: relative;
+.pc-navbar {
+  --nav-bg: var(--background);
+  --nav-ink: var(--text);
+  --nav-muted: var(--text-muted);
+  --nav-line: var(--border);
+  --nav-hover: var(--surface-subtle);
+  --nav-accent: var(--emerald-accent);
+  --nav-accent-ink: var(--emerald-on-accent);
+  position: sticky;
+  top: 0;
   z-index: 20;
   background: var(--nav-bg);
   color: var(--nav-ink);
   border-bottom: 1px solid var(--nav-line);
 }
 [data-theme="dark"] .pc-navbar {
-  --nav-bg: #15241e;
-  --nav-ink: #f5f5ef;
-  --nav-muted: #bec8bf;
-  --nav-line: #34443a;
-  --nav-hover: #24372c;
-  --nav-accent: #c8b382;
-  --nav-accent-ink: #17281f;
+  --nav-bg: var(--background);
+  --nav-ink: var(--text);
+  --nav-muted: var(--text-muted);
+  --nav-line: var(--border);
+  --nav-hover: var(--surface-subtle);
+  --nav-accent: var(--emerald-accent);
+  --nav-accent-ink: var(--emerald-on-accent);
 }
-.pc-nav-inner { max-width: 1440px; margin-inline: auto; padding: 14px clamp(20px, 4vw, 56px); display: flex; align-items: center; gap: clamp(18px, 2.2vw, 32px); }
+.pc-nav-inner { width: calc(100% - 2 * var(--page-gutter)); max-width: var(--content-width); margin-inline: auto; padding: 14px 0; display: flex; align-items: center; gap: clamp(18px, 2.2vw, 32px); }
 .pc-brand { display: inline-flex; flex-shrink: 0; border-radius: 5px; }
 .pc-brand img { display: block; width: 196px; height: auto; }
 [data-theme="dark"] .pc-brand { background: #fffefa; padding: 7px 10px; }
@@ -66,7 +67,7 @@
 .pc-menu[aria-expanded="true"] .pc-menu-lines span:nth-child(2) { opacity: 0; transform: scaleX(.5); }
 .pc-menu[aria-expanded="true"] .pc-menu-lines span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 @media (max-width: 1039px) {
-  .pc-nav-inner { padding: 12px 20px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 12px; }
+  .pc-nav-inner { padding: 12px 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 12px; }
   .pc-brand { justify-self: start; max-width: 100%; }
   .pc-brand img { width: 168px; max-width: 100%; }
   [data-theme="dark"] .pc-brand img { width: 148px; }
@@ -85,7 +86,7 @@
   .pc-chat { background: var(--nav-bg); }
 }
 @media (max-width: 380px) {
-  .pc-nav-inner { padding-inline: 16px; gap: 0 8px; }
+  .pc-nav-inner { padding-inline: 0; gap: 0 8px; }
   .pc-brand img { width: 150px; }
   [data-theme="dark"] .pc-brand img { width: 130px; }
 }

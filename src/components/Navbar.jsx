@@ -2,20 +2,22 @@ import { useEffect, useId, useRef, useState } from "react";
 import { ArrowUpRight, MessagesSquare } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import WhatsAppIcon from "./WhatsAppIcon";
-import { openHeroChat } from "../lib/heroChat";
 import "./Navbar.css";
 
 const defaultLinks = [
-  { label: "How It Works", href: "#how" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Why Us", href: "#why-us" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 function ContactAction({ href, onClick, children, className, label }) {
-  if (href) return <a className={className} href={href} onClick={onClick} target="_blank" rel="noopener noreferrer">{children}</a>;
+  if (href) return <a className={className} href={href} target="_blank" rel="noopener noreferrer">{children}</a>;
   return <button type="button" className={className} onClick={onClick} disabled={!onClick}
     title={!onClick ? `${label} is not configured yet` : undefined}>{children}</button>;
 }
 
-export default function Navbar({ links = defaultLinks, whatsappUrl, liveChatUrl, onLiveChat = openHeroChat }) {
+export default function Navbar({ links = defaultLinks, whatsappUrl }) {
   const [open, setOpen] = useState(false);
   const panelId = useId();
   const headerRef = useRef(null);
@@ -51,11 +53,11 @@ export default function Navbar({ links = defaultLinks, whatsappUrl, liveChatUrl,
             {links.map(({ label, href }) => <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>)}
           </nav>
           <div className="pc-contact">
-            <ContactAction href={whatsappUrl} onClick={() => setOpen(false)} className="pc-whatsapp" label="WhatsApp">
+            <ContactAction href={whatsappUrl} className="pc-whatsapp" label="WhatsApp">
               <WhatsAppIcon size={18} /><span>WhatsApp</span><ArrowUpRight size={15} aria-hidden="true" />
             </ContactAction>
-            <ContactAction href={liveChatUrl} onClick={() => { setOpen(false); if (!liveChatUrl) onLiveChat?.(); }} className="pc-chat" label="Live Chat">
-              <MessagesSquare size={17} aria-hidden="true" /><span>Live Chat</span>
+            <ContactAction href={whatsappUrl} className="pc-chat" label="WhatsApp Chat">
+              <MessagesSquare size={17} aria-hidden="true" /><span>WhatsApp Chat</span>
             </ContactAction>
           </div>
           </div>

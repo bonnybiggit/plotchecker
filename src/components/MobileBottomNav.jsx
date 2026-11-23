@@ -1,9 +1,9 @@
 import { Home, ListChecks, MessagesSquare } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
-import { openHeroChat } from "../lib/heroChat";
+import { openWhatsApp } from "../lib/whatsapp";
 import "./MobileBottomNav.css";
 
-export default function MobileBottomNav({ whatsappUrl, onLiveChat = openHeroChat }) {
+export default function MobileBottomNav({ whatsappUrl, onChat = openWhatsApp }) {
   return (
     <div className="mobile-bottom-nav-space">
       <nav className="mobile-bottom-nav" aria-label="Mobile quick navigation">
@@ -20,9 +20,9 @@ export default function MobileBottomNav({ whatsappUrl, onLiveChat = openHeroChat
           <WhatsAppIcon size={20} />
           <span>WhatsApp</span>
         </a>
-        <button type="button" className="mobile-bottom-nav__item" onClick={onLiveChat}>
+        <button type="button" className="mobile-bottom-nav__item" onClick={onChat}>
           <MessagesSquare size={20} aria-hidden="true" />
-          <span>Live Chat</span>
+          <span>Chat</span>
         </button>
       </nav>
     </div>
