@@ -1,9 +1,9 @@
 import { Home, ListChecks, MessagesSquare } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
-import { openWhatsApp } from "../lib/whatsapp";
+import { openAgentChat } from "../lib/tawk";
 import "./MobileBottomNav.css";
 
-export default function MobileBottomNav({ whatsappUrl, onChat = openWhatsApp }) {
+export default function MobileBottomNav({ whatsappUrl, onChat = openAgentChat }) {
   return (
     <div className="mobile-bottom-nav-space">
       <nav className="mobile-bottom-nav" aria-label="Mobile quick navigation">

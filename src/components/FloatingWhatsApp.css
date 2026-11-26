@@ -1,7 +1,7 @@
 .floating-whatsapp {
   position: fixed;
   right: max(24px, env(safe-area-inset-right, 0px));
-  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  bottom: calc(104px + env(safe-area-inset-bottom, 0px));
   z-index: 35;
   display: grid;
   place-items: center;
@@ -40,6 +40,6 @@
 @media (width < 768px) {
   .floating-whatsapp {
     right: max(16px, env(safe-area-inset-right, 0px));
-    bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+    bottom: calc(176px + env(safe-area-inset-bottom, 0px));
   }
 }

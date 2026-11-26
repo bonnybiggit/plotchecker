@@ -1,6 +1,6 @@
 import { MessagesSquare } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
-import { openWhatsApp } from '../lib/whatsapp';
+import { openAgentChat } from '../lib/tawk';
 import './Footer.css';
 
 const whatsappUrl = 'https://wa.me/2348142395577';
@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="site-footer__contact">
             <h3>Contact</h3>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer"><WhatsAppIcon size={16} /> WhatsApp Us</a>
-            <button type="button" onClick={openWhatsApp}><MessagesSquare size={16} aria-hidden="true" /> Chat on WhatsApp</button>
+            <button type="button" onClick={openAgentChat}><MessagesSquare size={16} aria-hidden="true" /> Chat with Agent</button>
             <p className="site-footer__tagline">Plotchecker.ng: Verify Before You Buy.</p>
           </div>
         </div>

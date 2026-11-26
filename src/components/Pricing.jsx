@@ -1,6 +1,6 @@
 import { ArrowUpRight, Check, MessagesSquare, Sparkles, X } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
-import { openWhatsApp } from '../lib/whatsapp';
+import { openAgentChat } from '../lib/tawk';
 import './Pricing.css';
 
 const packages = [
@@ -46,7 +46,7 @@ export default function Pricing() {
                 <p className="pricing__time"><img className="pricing__clock-3d" src="/images/pricing-clock-3d.png" alt="" width="16" height="16" loading="lazy" decoding="async" /> Results in {plan.time}</p>
                 <div className="pricing__actions">
                   <a className={`pricing__button${plan.recommended ? ' pricing__button--primary' : ''}`} href={whatsappLink(`Hello, I want the ${plan.name} for ${plan.price}`)} target="_blank" rel="noopener noreferrer"><WhatsAppIcon size={16} /> WhatsApp</a>
-                  <button className="pricing__button pricing__button--chat" type="button" onClick={openWhatsApp}><MessagesSquare size={16} aria-hidden="true" /> Chat on WhatsApp</button>
+                  <button className="pricing__button pricing__button--chat" type="button" onClick={openAgentChat}><MessagesSquare size={16} aria-hidden="true" /> Chat with Agent</button>
                 </div>
               </div>
             </article>
@@ -61,7 +61,7 @@ export default function Pricing() {
           <div className="pricing__corporate-actions">
             <a href={whatsappLink('Hello, I am interested in corporate pricing')} target="_blank" rel="noopener noreferrer">WhatsApp us <ArrowUpRight size={16} aria-hidden="true" /></a>
             <span>or</span>
-            <button type="button" onClick={openWhatsApp}>Chat on WhatsApp <ArrowUpRight size={16} aria-hidden="true" /></button>
+            <button type="button" onClick={openAgentChat}>Chat with Agent <ArrowUpRight size={16} aria-hidden="true" /></button>
           </div>
         </article>
       </div>

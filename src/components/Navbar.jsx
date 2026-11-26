@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { ArrowUpRight, MessagesSquare } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import WhatsAppIcon from "./WhatsAppIcon";
+import { openAgentChat } from "../lib/tawk";
 import "./Navbar.css";
 
 const defaultLinks = [
@@ -56,8 +57,8 @@ export default function Navbar({ links = defaultLinks, whatsappUrl }) {
             <ContactAction href={whatsappUrl} className="pc-whatsapp" label="WhatsApp">
               <WhatsAppIcon size={18} /><span>WhatsApp</span><ArrowUpRight size={15} aria-hidden="true" />
             </ContactAction>
-            <ContactAction href={whatsappUrl} className="pc-chat" label="WhatsApp Chat">
-              <MessagesSquare size={17} aria-hidden="true" /><span>WhatsApp Chat</span>
+            <ContactAction onClick={() => { setOpen(false); openAgentChat(); }} className="pc-chat" label="Chat with Agent">
+              <MessagesSquare size={17} aria-hidden="true" /><span>Chat with Agent</span>
             </ContactAction>
           </div>
           </div>
